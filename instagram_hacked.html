@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Instagram Security Check</title>
+
+<style>
+body{
+    background:black;
+    color:lime;
+    font-family:monospace;
+    text-align:center;
+    margin-top:100px;
+}
+
+h1{
+    color:red;
+    font-size:40px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>⚠ INSTAGRAM ACCOUNT HACKED ⚠</h1>
+
+<p id="text"></p>
+
+<script>
+let messages = [
+"Connecting to Instagram server...",
+"Bypassing security...",
+"Accessing messages...",
+"Downloading photos...",
+"Sending data to hacker server...",
+"Deleting account..."
+];
+
+let i = 0;
+
+function hacking(){
+    if(i < messages.length){
+        document.getElementById("text").innerHTML += messages[i] + "<br>";
+        i++;
+        setTimeout(hacking,1500);
+    }else{
+        document.getElementById("text").innerHTML += "<br><h2>APRIL FOOL 😂</h2>";
+    }
+}
+
+hacking();
+</script>
+
+</body>
+</html>
